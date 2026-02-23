@@ -4,6 +4,13 @@ React Native Course Project
 ## Link to APK
 https://drive.google.com/file/d/1ZliHOsSJzk4G6tZ4-BGkVEmmtsxnyqs8/view?usp=sharing
 
+## Walkthrough Tutorial (optional)
+*give simple directions on how to navigate, login and use the main app features*
+
+## Installation Guide
+*prerequisites*
+*steps needed to install and run project locally*
+
 ## Functional Guide
 1. Project Overview
  - *Application Name*: **Group Chat**
@@ -75,3 +82,9 @@ Root Navigation Logic
 1.  Error & Edge Case Handling
 - Describe how the app handles: - Authentication errors - Network or data errors - Empty or missing data states
 ---
+
+
+
+
+## Markdown CheatSheet
+[Link to cheatsheet](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet)
