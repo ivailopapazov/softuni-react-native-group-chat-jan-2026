@@ -18,13 +18,14 @@ export default function LoginScreen({
     const { login }  = useUserContext();
 
     const loginHandler = () => {
-        axios.post('http://192.168.1.211:4000/login', {
+        axios.post(`${process.env.EXPO_PUBLIC_API_URL}/login`, {
             email,
             password,
         })
             .then(response => {
-                const { name, id } = response.data;
-                login(email, name, id);
+                console.log('Login successful:', response.data);
+                const { accessToken, user } = response.data;
+                login(user, accessToken);
             })
             .catch(error => {
                 console.error('Login failed', error);

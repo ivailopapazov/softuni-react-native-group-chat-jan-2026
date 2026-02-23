@@ -7,7 +7,7 @@ React Native Course Project
 
 ## Project Workshop Plan
 ### 1. Separate and Deploy Server
-    - [ ] Setup environment variables
+    - [x] Setup environment variables
 ### 2. Proper Authentication Implementation
 ### 3. Build and Release*
 ### 4. Read Exam Reaquirements

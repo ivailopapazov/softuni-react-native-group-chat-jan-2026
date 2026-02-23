@@ -24,7 +24,7 @@ export default function RegisterScreen({
             return alert('Password Missmatch');
         }
 
-        axios.post('http://192.168.1.211:4000/register', {
+        axios.post(`${process.env.EXPO_PUBLIC_API_URL}/register`, {
             name,
             email,
             password,
@@ -34,7 +34,7 @@ export default function RegisterScreen({
                     { text: 'OK', onPress: () => navigation.goBack() }
                 ]);
 
-                login(email, name, response.data.id);
+                login(response.data.user, response.data.accessToken);
             })
             .catch(error => {
                 console.error('Registration failed', error);
