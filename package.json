@@ -6,8 +6,11 @@
     "start": "cross-env NODE_ENV=development expo start",
     "android:go": "cross-env NODE_ENV=development expo start --android",
     "ios:go": "cross-env NODE_ENV=development expo start --ios",
-    "android": "expo run:android",
-    "web": "cross-env NODE_ENV=development expo start --web"
+    "android": "cross-env NODE_ENV=development expo run:android",
+    "ios": "cross-env NODE_ENV=development expo run:ios",
+    "web": "cross-env NODE_ENV=development expo start --web",
+    "prebuild": "cross-env NODE_ENV=production expo prebuild",
+    "build:apk": "cd android && gradlew assembleRelease"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
@@ -17,6 +20,7 @@
     "expo": "~54.0.32",
     "expo-secure-store": "~15.0.8",
     "expo-status-bar": "~3.0.9",
+    "expo-system-ui": "~6.0.9",
     "react": "19.1.0",
     "react-native": "0.81.5",
     "react-native-safe-area-context": "~5.6.0",
